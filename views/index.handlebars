@@ -1,0 +1,28 @@
+{{> navbar }}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">The Ringer Scraper</h1>
+        <p class="lead">Click on the buttons below to scrape clear articles as favorites.</p>
+        <button type="button" class="btn btn-primary" id="buttonScrape">Scrape Articles</button>
+        <button type="button" class="btn btn-danger" id="buttonClear">Clear Articles</button>
+        <button type="button" class="btn btn-secondary" id="buttonFavorite">View Favorites</button>
+    </div>
+</div>
+
+<div class="container-fluid article-container">
+    {{#each article}}
+    <div data-id={{this._id}} class="card">
+
+        <div class="card-body">
+            <a href="{{this.link}}">
+                <h5 class="card-title" id="articleTitle">{{this.title}}</h5></a>
+            {{{this.image}}}
+            <p class="card-text" id="articleSummary">{{this.summary}}
+
+            </p>
+            <h6>By: {{this.author}}</h6>
+            <button type="button" class="btn btn-success buttonSave">Favorite</button>
+        </div>
+    </div>
+    {{/each}}
+</div>

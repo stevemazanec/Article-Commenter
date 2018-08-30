@@ -1,0 +1,15 @@
+.card {
+    width: 95%;
+    margin: 15px
+}
+
+img {
+    height: 150px;
+    width: 200px;
+    float: right;
+}
+
+.navImage {
+    width: 30px;
+    height: 30px;
+}
