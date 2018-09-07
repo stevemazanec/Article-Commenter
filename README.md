@@ -1,1 +1,1 @@
-# Article-Commenter
+Article Commenter is a full stack app created using Express, Handlebars, Node, MongoDB, jQuery and more that allows users to scrape articles from The Ringer website. Users can then save their favorite articles, and have the ability to leave/delete comments on their favorite articles. The live version of the site can be viewed at https://ringerscraper.herokuapp.com/
