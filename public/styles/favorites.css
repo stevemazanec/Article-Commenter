@@ -21,3 +21,55 @@ textarea {
 .deleteNote {
     float: right;
 }
+
+#buttonClear {
+    margin: 5px;    
+}
+
+.jumbotron {
+    background-image: url(/images/sports.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+}
+
+.heading {
+    background: #ED7D3A;
+    padding: 5px;
+    border: 3px #EF2D56 solid;
+    border-radius: 15px;
+}
+
+.card-body {
+    background: #ED7D3A;
+}
+
+.card-header {
+    background: #EF2D56;
+}
+
+.modal-header {
+    background: #EF2D56;
+}
+
+#modal-title {
+    color: #DCED31
+}
+
+#note-body {
+background: #ED7D3A
+}
+
+a {
+    color: #DCED31;
+}
+
+#articleTitle {
+    font: #363537 !important;
+}
+
+.allNotes {
+    border: 1px black solid;
+    padding: 5px 10px 20px 10px;
+    margin: 1px;
+}

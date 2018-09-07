@@ -1,7 +1,7 @@
  {{> navbar }}
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">The Ringer Scraper</h1>
+        <h1 class="display-4"><span class="heading">The Ringer Scraper</span></h1>
         <button type="button" class="btn btn-danger" id="buttonClear">Clear Articles</button>
     </div>
 </div>
@@ -9,17 +9,17 @@
 <div class="container-fluid">
     {{#each favorite}}
     <div data-id={{this._id}} class="card">
-
+        <a href="{{this.link}}">
+            <h5 class="card-header" id="articleTitle">{{this.title}}</h5></a>
         <div class="card-body">
-            <a href="{{this.link}}">
-                <h5 class="card-title" id="articleTitle">{{this.title}}</h5></a>
+
             {{{this.image}}}
             <p class="card-text" id="articleSummary">{{this.summary}}
 
             </p>
             <h6>By: {{this.author}}</h6>
-            <button type="button" class="btn btn-danger buttonDelete">Delete Article</button>
             <button type="button" class="btn btn-info buttonNote">Article Notes</button>
+            <button type="button" class="btn btn-danger buttonDelete">Delete Article</button>
         </div>
     </div>
     {{/each}}
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

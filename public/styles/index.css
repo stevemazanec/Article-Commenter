@@ -13,3 +13,34 @@ img {
     width: 30px;
     height: 30px;
 }
+
+.jumbotron {
+    background-image: url(/images/sports.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+}
+
+.heading {
+    background: #ED7D3A;
+    padding: 5px;
+    border: 3px #EF2D56 solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.card-body {
+    background: #ED7D3A;
+}
+
+.card-header {
+    background: #EF2D56;;
+}
+
+a {
+    color: #DCED31;
+}
+
+.buttonSave {
+    color: #363537 !important;
+}
